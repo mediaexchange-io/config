@@ -7,7 +7,7 @@
 [![Go version](https://img.shields.io/badge/go-~%3E1.14-green.svg)](https://golang.org/doc/devel/release.html#go1.14)
 
 After a search for a *simple* application configuration parser turned up
-many complex libraries, I decided to write my own.
+many complex libraries, we decided to write our own.
 
 ## Features
 

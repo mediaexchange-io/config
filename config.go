@@ -1,5 +1,5 @@
 /*
-   Copyright 2019 MediaExchange.io
+   Copyright 2023 MediaExchange.io
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -23,13 +23,14 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/ghodss/yaml"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"reflect"
 	"strconv"
 	"strings"
+
+	"github.com/ghodss/yaml"
 )
 
 // FromFile reads application configuration from a file found at path, then
@@ -77,7 +78,7 @@ func fromEnvironment(konf interface{}) error {
 	valueOfKonf := reflect.ValueOf(konf).Elem()
 	typeOfKonf := reflect.TypeOf(konf).Elem()
 
-	for i := 0; i < valueOfKonf.NumField(); i++  {
+	for i := 0; i < valueOfKonf.NumField(); i++ {
 		valueOfField := valueOfKonf.Field(i)
 		if valueOfField.Kind() == reflect.Struct && valueOfField.CanInterface() {
 			// Depth-first search for fields.
