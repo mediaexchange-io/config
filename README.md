@@ -1,10 +1,8 @@
 # config
 
-[![Build Status](https://travis-ci.org/mediaexchange/config.svg)](https://travis-ci.org/mediaexchange/config)
-[![GoDoc](https://godoc.org/github.com/mediaexchange/config/github?status.svg)](https://godoc.org/github.com/mediaexchange/config)
+[![GoDoc](https://godoc.org/github.com/mediaexchange-io/config/github?status.svg)](https://godoc.org/github.com/mediaexchange-io/config)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[![Go version](https://img.shields.io/badge/go-~%3E1.13-green.svg)](https://golang.org/doc/devel/release.html#go1.13)
-[![Go version](https://img.shields.io/badge/go-~%3E1.14-green.svg)](https://golang.org/doc/devel/release.html#go1.14)
+[![Go version](https://img.shields.io/badge/go-~%3E1.19-green.svg)](https://golang.org/doc/devel/release.html#go1.19)
 
 After a search for a *simple* application configuration parser turned up
 many complex libraries, we decided to write our own.
